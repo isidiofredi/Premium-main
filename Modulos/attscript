@@ -16,7 +16,7 @@ echo -e "\n\033[1;32m  INICIANDO ATUALIZACAO..."
 sleep 3
 
 [[ -e Plus ]] && rm Plus
-wget raw.githubusercontent.com/vipbeto/Premium/main/script/${arch}/Plus && chmod 777 Plus && ./Plus
+wget raw.githubusercontent.com/isidiofredi/Premium-main/main/script/${arch}/Plus && chmod 777 Plus && ./Plus
 
 clear
 
