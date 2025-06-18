@@ -1,6 +1,6 @@
 #!/bin/bash
 #====================================================
-#	@INTEL-NET
+#	@FOXNET-SSH
 #====================================================
 _lvk=$(wget -qO- https://raw.githubusercontent.com/vipbeto/Premium/main/Modulos/versao)
 IP=$(wget -qO- ipv4.icanhazip.com)
@@ -36,7 +36,7 @@ for _arq in ${_mdls[@]}; do
 	if [ -f "$_dir1/$_arq" ]; then
 		rm -f "$_dir1/$_arq"
 	fi
-	wget -c -O "$_dir1/$_arq" https://raw.githubusercontent.com/vipbeto/Premium/main/Modulos/$_arq
+	wget -c -O "$_dir1/$_arq" https://raw.githubusercontent.com/isidiofredi/Premium-main/main/Modulos/$_arq
 	chmod +x $_dir1/$_arq
 done
 mv $_dir1/cabecalho $_dir1/bot $_dir1/open.py $_dir1/proxy.py $_dir1/wsproxy.py $_dir2
@@ -59,7 +59,7 @@ clear
 #INICIO AUTOMATICO' >/etc/autostart
 	chmod +x /etc/autostart
 } || {
-	[[ $(ps x | grep "bot_plus" | grep -v grep | wc -l) != '0' ]] && wget -qO- https://raw.githubusercontent.com/vipbeto/Premium/main/Modulos/ShellBot.sh
+	[[ $(ps x | grep "bot_plus" | grep -v grep | wc -l) != '0' ]] && wget -qO- https://raw.githubusercontent.com/isidiofredi/Premium-main/main/Modulos/ShellBot.sh
 	for proc in $(ps x | grep 'dmS' | grep -v 'grep' | awk {'print $1'}); do
 		screen -r -S "$proc" -X quit	
 done
