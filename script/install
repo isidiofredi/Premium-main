@@ -2,7 +2,7 @@
 #====================================================
 #	@FOXNET-SSH
 #====================================================
-_lvk=$(wget -qO- https://raw.githubusercontent.com/vipbeto/Premium/main/Modulos/versao)
+_lvk=$(wget -qO- https://raw.githubusercontent.com/isidiofredi/Premium-main/main/Modulos/versao)
 IP=$(wget -qO- ipv4.icanhazip.com)
 IP2=$(wget -qO- http://whatismyip.akamai.com/)
 [[ "$IP" != "$IP2" ]] && ipdovps="$IP2" || ipdovps="$IP"
