@@ -2,7 +2,7 @@
 clear
 #--------------------------
 # SCRIPT SSH-PLUS
-# TELEGRAM: @BY-BETO-VIP
+# TELEGRAM: @BY-FOXNET-SSH
 #--------------------------
 
 # - Cores
@@ -71,4 +71,4 @@ clear
 
 # - Execulta instalador sem verificação de chave
 [[ -e Plus ]] && rm Plus
-wget https://raw.githubusercontent.com/vipbeto/Premium/refs/heads/main/script/${arch}/Plus && chmod 777 Plus && ./Plus
+wget https://raw.githubusercontent.com/isidiofredi/Premium-main/refs/heads/main/script/${arch}/Plus && chmod 777 Plus && ./Plus
